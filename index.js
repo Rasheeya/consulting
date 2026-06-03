@@ -91,6 +91,62 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
                 
+                // Initialize Typed.js for section titles
+                const typedEls = target.classList.contains('typed-section') ? [target] : target.querySelectorAll('.typed-section');
+                typedEls.forEach(typedEl => {
+                    if (!typedEl.classList.contains('typed-initialized') && window.Typed) {
+                        typedEl.classList.add('typed-initialized');
+                        const stringsAttr = typedEl.getAttribute('data-strings');
+                        if (stringsAttr) {
+                            try {
+                                const strings = JSON.parse(stringsAttr);
+                                new Typed(typedEl, {
+                                    strings: strings,
+                                    typeSpeed: 40,
+                                    showCursor: true,
+                                    cursorChar: '|',
+                                    loop: false
+                                });
+                            } catch (e) {
+                                console.error('Error parsing Typed strings', e);
+                            }
+                        }
+                    }
+                });
+                
+                // Initialize Stat Counters
+                const statNumbers = target.classList.contains('stat-number') ? [target] : target.querySelectorAll('.stat-number');
+                statNumbers.forEach(statEl => {
+                    if (!statEl.classList.contains('counter-initialized')) {
+                        statEl.classList.add('counter-initialized');
+                        const targetNum = parseFloat(statEl.getAttribute('data-target') || 0);
+                        const prefix = statEl.getAttribute('data-prefix') || '';
+                        const suffix = statEl.getAttribute('data-suffix') || '';
+                        const duration = 2000;
+                        let startTimestamp = null;
+                        
+                        const step = (timestamp) => {
+                            if (!startTimestamp) startTimestamp = timestamp;
+                            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                            const easeProgress = 1 - Math.pow(1 - progress, 4); // easeOutQuart
+                            const currentNum = easeProgress * targetNum;
+                            
+                            const isFloat = targetNum % 1 !== 0;
+                            const displayNum = isFloat ? currentNum.toFixed(1) : Math.floor(currentNum);
+                            
+                            statEl.textContent = `${prefix}${displayNum}${suffix}`;
+                            
+                            if (progress < 1) {
+                                window.requestAnimationFrame(step);
+                            } else {
+                                // Final value display to ensure exact match
+                                statEl.textContent = `${prefix}${targetNum}${suffix}`;
+                            }
+                        };
+                        window.requestAnimationFrame(step);
+                    }
+                });
+
                 target.classList.add('revealed');
                 // Once revealed, stop observing to optimize scrolling performance
                 observer.unobserve(target);

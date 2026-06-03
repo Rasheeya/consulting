@@ -1314,3 +1314,46 @@ textarea.form-input {
         text-align: center;
     }
 }
+
+/* ==========================================
+   ENHANCED GRID ANIMATIONS & HOVER EFFECTS
+   ========================================== */
+.stat-card,
+.service-card,
+.step-card,
+.sector-card,
+.advisor-card {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.stat-card:hover,
+.service-card:hover,
+.step-card:hover,
+.sector-card:hover,
+.advisor-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+}
+
+.service-card:hover {
+    border-color: var(--primary-blue);
+}
+
+.sector-card:hover {
+    border-color: var(--primary-blue);
+    background-color: #ffffff;
+}
+
+.step-card:hover {
+    border-color: var(--primary-blue);
+}
+
+.advisor-card:hover .advisor-img {
+    transform: scale(1.1);
+}
+
+/* Base styles for typing effect cursor */
+.typed-cursor {
+    color: var(--primary-blue);
+    font-weight: 300;
+}
