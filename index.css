@@ -31,6 +31,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -58,6 +59,7 @@ img {
 /* Global Section Defaults */
 section {
     padding: 80px 0;
+    overflow-x: hidden;
 }
 
 .section-header {
@@ -120,6 +122,12 @@ section {
     color: var(--white);
 }
 
+.btn-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
 /* Component Badges */
 .badge {
     display: inline-block;
@@ -160,6 +168,10 @@ section {
     padding: 0 24px;
 }
 
+.nav-logo {
+    flex-shrink: 0;
+}
+
 .nav-logo img {
     width: 180px;
     height: auto;
@@ -187,12 +199,12 @@ section {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 26px;
-    height: 18px;
+    width: 44px;
+    height: 44px;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 13px 9px;
     z-index: 1001;
     transition: var(--transition-smooth);
 }
@@ -1247,6 +1259,20 @@ textarea.form-input {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        padding-top: 130px;
+        padding-bottom: 90px;
+        min-height: auto;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .testimonial-card {
+        padding: 24px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1280,6 +1306,7 @@ textarea.form-input {
     .btn-group {
         flex-direction: column;
         width: 100%;
+        gap: 12px;
     }
 
     .btn {
