@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly | Strategy & Growth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="./assets/logo (10).webp" alt="stackly">
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="404.html">About</a>
+                <a href="404.html">Services</a>
+                <a href="404.html">Our Way</a>
+                <a href="404.html">Success Stories</a>
+                <a href="404.html" class="btn btn-primary nav-btn">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Target sections updated to integrate with scroll animations -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('./assets/head1.webp');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('./assets/head2.webp');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('./assets/head3.webp');">
+            </div>
+        </div>
+        <div class="container hero-container-centered">
+            <div class="hero-content reveal-y" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="badge">Strategy meets execution</span>
+                <h1 class="hero-title">
+                    We help you <br><span id="typed" class="text-accent"></span>
+                </h1>
+                <p class="hero-description"
+                    style="max-width: 650px; margin-left: auto; margin-right: auto; color: #cbd5e1;">
+                    We partner with forward-thinking enterprises to navigate complexity, accelerate scale, and secure
+                    sustainable market leadership.
+                </p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="404.html" class="btn btn-primary">Book a Consultation</a>
+                    <a href="404.html" class="btn btn-outline">Our Expertise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section section-reveal">
+        <div class="container">
+            <p class="stats-tagline">Trusted by industry innovators worldwide</p>
+            <div class="stats-grid">
+                <div class="stat-card reveal-y">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Retention Rate</div>
+                </div>
+                <div class="stat-card reveal-y">
+                    <div class="stat-number">$2.4B+</div>
+                    <div class="stat-label">Client Revenue Managed</div>
+                </div>
+                <div class="stat-card reveal-y">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Global Enterprises Scaled</div>
+                </div>
+                <div class="stat-card reveal-y">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Years Combined Expertise</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-reveal">
+        <div class="container about-grid">
+            <div class="about-image-wrapper reveal-left">
+                <img src="./assets/engineered.webp" alt="Collaborative workshop" class="about-img">
+            </div>
+            <div class="about-content reveal-right">
+                <h2 class="section-title">Engineered for Radical Breakthroughs</h2>
+                <p class="section-description">
+                    We don't just hand over slide decks. We embed ourselves in your operational reality to diagnose
+                    bottlenecks, design high-yield frameworks, and execute strategies alongside your leadership team.
+                </p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon-check"><i class="fas fa-check"></i></div>
+                        <div>
+                            <h4>Data-First Architecture</h4>
+                            <p>Every strategic pivot we recommend is backed by clean internal metrics and market
+                                telemetry.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-check"><i class="fas fa-check"></i></div>
+                        <div>
+                            <h4>Fractional Leadership Integration</h4>
+                            <p>Get access to battle-tested C-suite minds without the permanent executive overhead.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section section-reveal">
+        <div class="container">
+            <div class="section-header reveal-y">
+                <h2 class="section-title">Core Areas of Impact</h2>
+                <p class="section-description">Tailored corporate interventions designed to eliminate operational
+                    friction and unlock non-linear scaling loops.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card hover-card reveal-y">
+                    <div class="service-icon icon-blue">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Corporate Strategy</h3>
+                    <p>Market entry blueprints, competitor vulnerability analysis, and robust 5-year scaling
+                        architectures.</p>
+                    <a href="404.html" class="card-link link-blue">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card hover-card reveal-y">
+                    <div class="service-icon icon-indigo">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Digital Transformation</h3>
+                    <p>Migrating legacy systems to agile, cloud-native operational hubs integrated with modern AI
+                        layers.</p>
+                    <a href="404.html" class="card-link link-indigo">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card hover-card reveal-y">
+                    <div class="service-icon icon-purple">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>M&A Advisory</h3>
+                    <p>End-to-end transaction support including hard asset due diligence, valuation modeling, and
+                        post-merger unity.</p>
+                    <a href="404.html" class="card-link link-purple">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="methodology-section section-reveal">
+        <div class="container">
+            <div class="section-header reveal-y">
+                <h2 class="section-title text-white">The Acceleration Playbook</h2>
+                <p class="section-description text-muted">A structured, predictable 3-step operational framework to
+                    reliably move your company from vision to execution.</p>
+            </div>
+
+            <div class="methodology-grid">
+                <div class="step-card reveal-left">
+                    <div class="step-number num-blue">01</div>
+                    <h3>Deep Diagnostic Audit</h3>
+                    <p>We systematically stress-test your internal data pipelines, tech architecture, and operational
+                        dependencies over a 14-day discovery loop.</p>
+                </div>
+                <div class="step-card reveal-y">
+                    <div class="step-number num-indigo">02</div>
+                    <h3>Architecture Blueprint</h3>
+                    <p>We deliver an exhaustive deployment roadmap targeting low-hanging efficiency gains alongside your
+                        primary scaling objectives.</p>
+                </div>
+                <div class="step-card reveal-right">
+                    <div class="step-number num-purple">03</div>
+                    <h3>Co-Executed Delivery</h3>
+                    <p>We deploy alongside your team, conducting weekly performance telemetry sprints until the targets
+                        are met and locked in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors of Scale Section with unique split sticky-left layout -->
+    <section id="sectors" class="sectors-section section-reveal">
+        <div class="container sectors-grid">
+            <div class="sectors-lead reveal-left">
+                <span class="badge">Industry Focus</span>
+                <h2 class="section-title">Sectors of Scale</h2>
+                <p class="section-description">
+                    We bring specialized operational playbooks and deep data telemetry models to high-stakes market
+                    verticals.
+                </p>
+                <div class="stat-card"
+                    style="margin-top: 32px; padding: 24px; background-color: var(--light-slate); border-left: 4px solid var(--primary-blue); text-align: left;">
+                    <div class="stat-number" style="font-size: 2.25rem;">12+</div>
+                    <div class="stat-label" style="font-weight: 600; color: var(--dark-slate);">Key Verticals Catalyzed
+                    </div>
+                </div>
+            </div>
+
+            <div class="sectors-cards-grid">
+                <div class="sector-card reveal-y">
+                    <div class="sector-icon icon-blue">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Financial Technology</h3>
+                    <p>Securing scaling compliance, transaction optimizations, and modern microservices ledgers.</p>
+                    <div class="sector-metric">
+                        <i class="fas fa-chart-line"></i> +38% Capital velocity
+                    </div>
+                </div>
+                <div class="sector-card reveal-y">
+                    <div class="sector-icon icon-indigo">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare & MedTech</h3>
+                    <p>Designing digital patient workflows and automated secure telemetry architectures.</p>
+                    <div class="sector-metric">
+                        <i class="fas fa-users"></i> 12M+ Patients served
+                    </div>
+                </div>
+                <div class="sector-card reveal-y">
+                    <div class="sector-icon icon-purple">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Enterprise SaaS & AI</h3>
+                    <p>Transitioning legacy platforms into multi-tenant architectures with integrated LLM nodes.</p>
+                    <div class="sector-metric">
+                        <i class="fas fa-server"></i> 250+ Deployments
+                    </div>
+                </div>
+                <div class="sector-card reveal-y">
+                    <div class="sector-icon icon-blue" style="background-color: #3b82f6;">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Logistics & Supply Chain</h3>
+                    <p>Refining warehouse delivery latency using real-time IoT sensors and port routing AI.</p>
+                    <div class="sector-metric">
+                        <i class="fas fa-tachometer-alt"></i> +34% Throughput boost
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Leadership Section with modern asymmetric card staggers -->
+    <section id="advisory" class="advisory-section section-reveal">
+        <div class="container">
+            <div class="section-header reveal-y">
+                <span class="badge">Expert Partners</span>
+                <h2 class="section-title">Executive Advisory Leadership</h2>
+                <p class="section-description">Battle-tested fractional leaders embedded alongside your management team
+                    to drive decisive breakthroughs.</p>
+            </div>
+
+            <div class="advisory-grid">
+                <div class="advisor-card reveal-y">
+                    <div class="advisor-image-container">
+                        <img src="./assets/helena.webp" alt="Dr. Helena Vance" class="advisor-img">
+                        <div class="advisor-overlay">
+                            <div class="advisor-socials">
+                                <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="404.html" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <span class="advisor-tag">Finance Partner</span>
+                        <h3>Dr. Helena Vance</h3>
+                        <p class="advisor-role">Fractional Chief Financial Officer</p>
+                        <p class="advisor-bio">Former Managing Director of Investment Strategy at Goldman Sachs.
+                            Specialist in structured corporate transactions, valuation models, and high-stakes M&A
+                            advisory audits.</p>
+                    </div>
+                </div>
+
+                <div class="advisor-card reveal-y">
+                    <div class="advisor-image-container">
+                        <img src="./assets/devon.webp" alt="Devon Cole" class="advisor-img">
+                        <div class="advisor-overlay">
+                            <div class="advisor-socials">
+                                <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="404.html" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <span class="advisor-tag">Technology Partner</span>
+                        <h3>Devon Cole</h3>
+                        <p class="advisor-role">Fractional Chief Technology Officer</p>
+                        <p class="advisor-bio">Former VP of Infrastructure Systems at AWS. Specialist in database
+                            optimizations, migrating monolithic backends to distributed microservices, and AI
+                            integrations.</p>
+                    </div>
+                </div>
+
+                <div class="advisor-card reveal-y">
+                    <div class="advisor-image-container">
+                        <img src="./assets/elena.webp" alt="Elena Rostova" class="advisor-img">
+                        <div class="advisor-overlay">
+                            <div class="advisor-socials">
+                                <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="404.html" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advisor-info">
+                        <span class="advisor-tag">Operations Partner</span>
+                        <h3>Elena Rostova</h3>
+                        <p class="advisor-role">Fractional Chief Operating Officer</p>
+                        <p class="advisor-bio">Over 20 years tuning logistics telemetry systems at FedEx Express. Expert
+                            in supply chain diagnostics, corporate governance pivots, and margin leak audits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section section-reveal">
+        <div class="container">
+            <div class="section-header reveal-y">
+                <span class="badge">Client Praise</span>
+                <h2 class="section-title">Real ROI. Verified Success.</h2>
+                <p class="section-description">Hear from executives who decoupled from standard legacy frameworks to
+                    build high-performance operations.</p>
+            </div>
+
+            <div class="testimonials-carousel-wrapper reveal-y">
+                <div class="testimonials-carousel" id="testimonials-carousel">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "Stackly completely overhauled our global logistics stack. Within 6 months,
+                                operational leakage dropped by 34%, and our system throughput hit record highs."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="./assets/sarah.webp" alt="Sarah Jenkins" class="author-img">
+                                <div>
+                                    <h5>Sarah Jenkins</h5>
+                                    <span class="author-role">Chief Operating Officer, Velo Logistics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "Their fractional C-suite integration strategy allowed us to confidently scale into the
+                                European market without hiring prematurely. Exceptional ROI."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="./assets/marcus.webp" alt="Marcus Vance" class="author-img">
+                                <div>
+                                    <h5>Marcus Vance</h5>
+                                    <span class="author-role">Founder & Managing Director, Scaleify Tech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "Apex led our transition to secure HIPAA-compliant cloud systems. In under 9 months,
+                                data access latency dropped by 45%, allowing our doctors to save crucial diagnostic
+                                minutes."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="./assets/jonathan.webp" alt="Jonathan Albright" class="author-img">
+                                <div>
+                                    <h5>Jonathan Albright</h5>
+                                    <span class="author-role">CEO, Apex Health Holdings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "Their deep audit uncovered $1.2M in operational leakage we had missed. The transition
+                                blueprint they executed beside us has completely transformed our operating margins."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="./assets/teresa.webp" alt="Theresa Sterling" class="author-img">
+                                <div>
+                                    <h5>Theresa Sterling</h5>
+                                    <span class="author-role">VP of Strategy, Zenith Retail Group</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation Controls -->
+                <div class="carousel-controls">
+                    <button class="carousel-control prev-btn" id="prev-testimonial" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+                    <button class="carousel-control next-btn" id="next-testimonial" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-reveal">
+        <div class="container max-width-md">
+            <div class="contact-box reveal-y">
+                <div class="contact-header">
+                    <h2>Initiate Strategy Session</h2>
+                    <p>Drop your details below. Our senior architects evaluate inbound briefs within 24 business hours.
+                    </p>
+                </div>
+
+                <form id="consultingForm" class="contact-form" onsubmit="window.location.href='404.html'; return false">
+                    <div class="form-row">
+                        <input type="text" id="name" placeholder="Your Name" required class="form-input">
+                        <input type="email" id="email" placeholder="Corporate Email" required class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <select id="initiative" required class="form-input select-input">
+                            <option value="" disabled selected>Select Primary Growth Initiative</option>
+                            <option value="strategy">Corporate Strategy Shift</option>
+                            <option value="digital">Digital Optimization</option>
+                            <option value="ma">M&A Strategy / Due Diligence</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <textarea id="message" placeholder="Tell us briefly about your current scale bottlenecks..."
+                            rows="4" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-btn">Submit Strategic Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Column 1: Company Profile -->
+            <div class="footer-col reveal-y">
+                <a href="index.html"><img src="./assets/logo (10).webp" alt="stackly"></a>
+                <p class="footer-about">
+                    We partner with forward-thinking enterprises to navigate complexity, accelerate scale, and secure
+                    sustainable market leadership.
+                </p>
+                <div class="footer-socials">
+                    <a href="404.html" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col reveal-y">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="404.html">About Us</a></li>
+                    <li><a href="404.html">Our Services</a></li>
+                    <li><a href="404.html">Our Methodology</a></li>
+                    <li><a href="404.html">Success Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Expertise Areas -->
+            <div class="footer-col reveal-y">
+                <h4>Practice Areas</h4>
+                <ul class="footer-links">
+                    <li><a href="404.html">Corporate Strategy</a></li>
+                    <li><a href="404.html">Digital Transformation</a></li>
+                    <li><a href="404.html">M&A Strategy Advisory</a></li>
+                    <li><a href="404.html">Operational Excellence</a></li>
+                    <li><a href="404.html">Growth Telemetry pivot</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact / Office Details -->
+            <div class="footer-col reveal-y">
+                <h4>Global Office</h4>
+                <p class="footer-contact-info">
+                    <i class="fas fa-map-marker-alt"></i>Salem, Tamil Nadu, India - 636001<br><br>
+                    <i class="fas fa-phone-alt"></i> +91 98765 43210 (24/7 Available)<br><br>
+                    <i class="fas fa-envelope"></i> support@stackly.com
+                </p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="footer-copy">&copy; 2026 Stackly Global Advisory Group. All strategic rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="404.html">Privacy Policy</a>
+                <a href="404.html">Terms of Service</a>
+                <a href="404.html">Cookies Settings</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
